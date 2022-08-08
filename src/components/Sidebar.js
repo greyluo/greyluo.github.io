@@ -1,18 +1,17 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
+import { Collapse } from 'react-bootstrap'
+import { Nav } from 'react-bootstrap'
 
-const Sidebar = () => {
+const Sidebar = ({open}) => {
     return (
-        <div className='Sidebar'>
-            <li>
-                <a href='#'>Home</a>
-            </li>
-            <li>
-                <a href='#'>About</a>
-            </li>
-            <li>
-                <a href='#'>Projects</a>
-            </li>
-        </div>
+      <Collapse in={open}>
+      <Nav defaultActiveKey="/" className="flex-column">
+      <Nav.Link href="/">Home</Nav.Link>
+      <Nav.Link href="/Education">Education</Nav.Link>
+      <Nav.Link href="Projects">Projects</Nav.Link>
+    </Nav>
+      </Collapse>
       )
   }
   export default Sidebar;

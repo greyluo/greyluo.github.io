@@ -3,13 +3,21 @@ import Project from './Project'
 
 const Projects = ({projects}) => {
   return (
-    <div className='Course'>
+    <div id='Projects'  >
+    <h2>Projects</h2>
+    <div >
     {
-            projects.map((project,index) => (
-                <Project key={index} project= {project}></Project>
+        projects.map((project,index) => (
+                <Project key={index} project= {project}></Project>   
     ))
         }
     </div>
+       
+    
+    
+
+
+</div>
   )
 }
 

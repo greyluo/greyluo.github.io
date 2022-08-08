@@ -1,25 +1,18 @@
 {
   "courses":[
     {
-      "subject":"cse",
-      "id":101,
-      "name":"Design and Analysis of Algorithms"
-    },
-    {
-      "subject":"cse",
-      "id":100,
-      "name":"Advanced Data Structures"
-    },
-    {
-      "subject":"cse",
-      "id":140,
-      "name":"Introduction to Computer Architecture"
-    },
-    {
-      "subject":"cse",
-      "id":30,
-      "name":"Computer Organization and Systems Programming"
+      "id":"11",
+      "subject":"Math",
+      "name":"Algebra",
+      "link":"dge"
     }
-    
+  ],
+  "projects":[
+    {
+      "name":"Math",
+      "description":"Algebra",
+      "duration":"1",
+      "link":"http://www.google.com"
+    }
   ]
 }

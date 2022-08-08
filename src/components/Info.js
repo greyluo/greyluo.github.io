@@ -2,12 +2,14 @@ import React from 'react'
 
  const Info = () => {
   return (
-    <div className='Info'>
+    <div id='Info'>
+        
         <h1>Guidong Luo</h1>
-        <h3>g1luo@ucsd.edu</h3>
-        <h3><a href=''>Github</a></h3>
-        <h3>San Diego</h3>
-        <p> I am a rising sophomore majoring in Math-CS at UCSD. I am ready to take on a SWE intern in Winter 2022 or Summer 2023.</p>
+        <h4>Contact Info:</h4>
+        <h4>g1luo@ucsd.edu</h4>
+        <h4><a href=''>Github</a></h4>
+        <h4>San Diego</h4>
+        <p> I am a rising sophomore majoring in Math-CS at UCSD. I am ready to take on a SWE intern in Winter 2022 or Summer 2023. I am a rising sophomore majoring in Math-CS at UCSD. I am ready to take on a SWE intern in Winter 2022 or Summer 2023</p>
     </div>
   )
 }
