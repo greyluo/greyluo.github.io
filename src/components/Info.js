@@ -5,7 +5,7 @@ import React from 'react'
     <div id='Info'>
         
         <h1>Guidong Luo</h1>
-        <h4>Contact Info:</h4>
+        <h4>Contact Infodge:</h4>
         <h4>g1luo@ucsd.edu</h4>
         <h4><a href=''>Github</a></h4>
         <h4>San Diego</h4>

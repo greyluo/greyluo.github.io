@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react'
 import Projects from './components/Projects';
 import {Routes, Route} from 'react-router-dom'
 import SideButton from './components/SideButton';
+
 // Bootstrap CSS
 // Bootstrap Bundle JS
 
@@ -14,6 +15,7 @@ function App() {
   const [projects, setProjects] = useState([]);
   const [showSidebar, setShowSidebar] = useState(false);
   const [open, setOpen] = useState(false);
+  
 
   useEffect(() => {
 
@@ -43,26 +45,42 @@ function App() {
   }
 
   return (
-    <div className="container">
-      <div className='d-sm-flex'>
-      <nav className="navbar navbar-expand-xl navbar-light bg-light">
-        <SideButton onClick ={() => setOpen(!open)} open = {open} />
-        <Sidebar open = {open}/>
+    <div>
+      <nav className='navbar navbar-expand-lg bg-dark navbar-dark py-3 '>
+        <div className='container'>
+          <a href="#" class="navbar-brand"></a>
+          <SideButton onClick ={() => setOpen(!open)} />
+          <Sidebar open = {open}/>
+          
+        </div>
+    
       </nav>
-      
+    <section className='bg-dark text-light p-5 '>
+      <div className="container">
+        <Routes>
+          <Route path='/' element={<Info />} />
+          <Route path='/Education' element={<Education courses={courses} />} />
+          <Route path='/Projects' element={<Projects projects={projects} />} />
 
-      <div className="main">
-      <Routes>
-        <Route path='/' element={<Info />} />
-        <Route path='/Education' element={<Education courses={courses} />} />
-        <Route path='/Projects' element={<Projects projects={projects} />} />
-
-      </Routes>
+        </Routes>
       
       
       </div>
-      </div>
+    </section>
+    <div className="h-100">
     </div>
+    <footer className="p-5 bg-dark text-white text-center position-absolute bottom-0 start-50 translate-middle">
+      <div className="container">
+        <p className="lead">Copyright &copy; 2022 Guidong Luo</p>
+
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i className="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+   
+    </div>
+    
   )
 
 }
