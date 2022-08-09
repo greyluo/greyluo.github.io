@@ -4,7 +4,7 @@ import Course from './Course'
 
 const Education = ({courses}) => {
   return (
-    <div id='Education'>
+    <div className='p-5' id='Education'>
         <h2>Education</h2>
         <h3>University of California, San Diego</h3>
         <h4>Expected Graduation: June 2023</h4>

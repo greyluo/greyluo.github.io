@@ -69,11 +69,11 @@ function App() {
     </section>
     <div className="h-100">
     </div>
-    <footer className="p-5 bg-dark text-white text-center position-absolute bottom-0 start-50 translate-middle">
+    <footer className="p-5 bg-dark text-white text-center position-absolute top-100 start-50 translate-middle bottom-fixed">
       <div className="container">
         <p className="lead">Copyright &copy; 2022 Guidong Luo</p>
 
-        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+        <a href="#" className="position-absolute bottom-0 end-0 p-5">
           <i className="bi bi-arrow-up-circle h1"></i>
         </a>
       </div>
