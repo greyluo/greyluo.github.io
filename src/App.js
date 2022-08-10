@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react'
 import Projects from './components/Projects';
 import {Routes, Route} from 'react-router-dom'
 import SideButton from './components/SideButton';
-
+import data from './db.json'
 // Bootstrap CSS
 // Bootstrap Bundle JS
 
@@ -21,7 +21,7 @@ function App() {
   useEffect(() => {
 
     const getCourses = async () => {
-      const CoursesFromServer = await fetchCourses()
+      const CoursesFromServer = data.courses;
       setCourses(CoursesFromServer)
     }
 
@@ -32,7 +32,7 @@ function App() {
 
   useEffect(() => {
     const getProjects = async () => {
-      const ProjectsFromServer = await fetchProjects()
+      const ProjectsFromServer = data.projects;
       setProjects(ProjectsFromServer)
     }
 
@@ -40,14 +40,14 @@ function App() {
   },[])
   useEffect(() => {
     const getSkills = async () => {
-      const SkillsFromServer = await fetchSkills()
+      const SkillsFromServer = data.skills;
       setSkills(SkillsFromServer)
     }
 
     getSkills()
   },[])
 
-  const fetchSkills = async () => {
+/*   const fetchSkills = async () => {
     const res = await fetch('http://localhost:3000/skills')
     const data = await res.json()
     return data
@@ -62,7 +62,7 @@ function App() {
     const res = await fetch('http://localhost:3000/courses')
     const data = await res.json()
     return data
-  }
+  } */
 
   return (
     <div>
