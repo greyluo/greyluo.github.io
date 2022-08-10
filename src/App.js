@@ -15,6 +15,7 @@ function App() {
   const [projects, setProjects] = useState([]);
   const [showSidebar, setShowSidebar] = useState(false);
   const [open, setOpen] = useState(false);
+  const [skills, setSkills] = useState([]);
   
 
   useEffect(() => {
@@ -26,6 +27,10 @@ function App() {
 
     getCourses()
 
+   
+  },[])
+
+  useEffect(() => {
     const getProjects = async () => {
       const ProjectsFromServer = await fetchProjects()
       setProjects(ProjectsFromServer)
@@ -33,6 +38,21 @@ function App() {
 
     getProjects()
   },[])
+  useEffect(() => {
+    const getSkills = async () => {
+      const SkillsFromServer = await fetchSkills()
+      setSkills(SkillsFromServer)
+    }
+
+    getSkills()
+  },[])
+
+  const fetchSkills = async () => {
+    const res = await fetch('http://localhost:3000/skills')
+    const data = await res.json()
+    return data
+  }
+
   const fetchProjects = async () => {
     const res = await fetch('http://localhost:3000/projects')
     const data = await res.json()
@@ -46,7 +66,7 @@ function App() {
 
   return (
     <div>
-      <nav className='navbar navbar-expand-lg bg-dark navbar-dark py-3 '>
+      <nav className='navbar navbar-expand-md bg-dark navbar-dark py-3 '>
         <div className='container'>
           <a href="#" class="navbar-brand"></a>
           <SideButton onClick ={() => setOpen(!open)} />
@@ -55,10 +75,10 @@ function App() {
         </div>
     
       </nav>
-    <section className='bg-dark text-light p-5 '>
+    <section className='bg-dark text-light mx-3 mt-3 pb-5 mb-5'>
       <div className="container">
         <Routes>
-          <Route path='/' element={<Info />} />
+          <Route path='/' element={<Info skills={skills} />} />
           <Route path='/Education' element={<Education courses={courses} />} />
           <Route path='/Projects' element={<Projects projects={projects} />} />
 
@@ -69,13 +89,11 @@ function App() {
     </section>
     <div className="h-100">
     </div>
-    <footer className="p-5 bg-dark text-white text-center position-absolute top-100 start-50 translate-middle bottom-fixed">
+    <footer className="p-3 m-3 bg-dark text-white text-center position-relative start-50 translate-middle bottom-fixed">
       <div className="container">
         <p className="lead">Copyright &copy; 2022 Guidong Luo</p>
 
-        <a href="#" className="position-absolute bottom-0 end-0 p-5">
-          <i className="bi bi-arrow-up-circle h1"></i>
-        </a>
+        
       </div>
     </footer>
    

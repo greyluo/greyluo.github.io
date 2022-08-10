@@ -1,22 +1,29 @@
 import React from 'react'
 import Course from './Course'
-
+import ucsd from "./ucsd.jpeg"
 
 const Education = ({courses}) => {
+ 
   return (
-    <div className='p-5' id='Education'>
-        <h2>Education</h2>
-        <h3>University of California, San Diego</h3>
-        <h4>Expected Graduation: June 2023</h4>
-        <h4>Major: Math-CS</h4>
-        <h4>Overall GPA: 3.84</h4>
-
-        <div className='Courses'>
-        {
+    <div className='p-3' id='Education'>
+        <h1 className='text-center p-3'>Education</h1>
+        <div className="card bg-secondary bg-opacity-25">
+        <img src={ucsd} className="card-img-top w-auto" alt="ucsd"></img>
+          <div className="card-body p-3">
+          <h2 className='card-title p-2'>University of California, San Diego</h2>
+          <p className='px-2 d-inline text-light text-opacity-50'>Major: Math-CS</p>
+          <p className='px-2 d-inline text-light text-opacity-50'>GPA: 3.9</p>
+          <p className='px-2 d-inline text-light text-opacity-50'>Expected Graduation: Fall 2023</p>
+          <div className='Courses'>
+            <h4 className='p-2 mt-3'>Related Courses</h4>
+            {
                 courses.map((course,index) => (
-                    <Course key={index} course= {course}></Course>
-        ))
-            }
+                  <Course key={index} course= {course}></Course>
+            ))
+          }
+          </div>
+        </div>
+        
             
         </div>
            

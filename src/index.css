@@ -16,33 +16,10 @@ li {
   padding-top: 5px;
 }
 
-
-
-
-div#Info {
-  /* display: inline-block; */
-}
-
-h4 {
-  padding: 0.3em;
-  display: inline-flex;
-}
 li {
   list-style: none;
   padding-top: 5px;
 }
-
-
-.container {
-  
-}
-
-
-div#Info {
-  /* display: inline-block; */
-}
-
-h4 {
-  padding: 0.3em;
-  display: inline-flex;
+a {
+  text-decoration: underline dotted;
 }
