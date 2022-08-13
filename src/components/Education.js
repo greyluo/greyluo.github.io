@@ -12,7 +12,7 @@ const Education = ({courses}) => {
           <div className="card-body p-3">
           <h2 className='card-title p-2'>University of California, San Diego</h2>
           <p className='px-2 d-inline text-light text-opacity-50'>Major: Math-CS</p>
-          <p className='px-2 d-inline text-light text-opacity-50'>GPA: 3.9</p>
+          <p className='px-2 d-inline text-light text-opacity-50'>GPA: 3.85</p>
           <p className='px-2 d-inline text-light text-opacity-50'>Expected Graduation: Fall 2023</p>
           <div className='Courses'>
             <h4 className='p-2 mt-3'>Related Courses</h4>

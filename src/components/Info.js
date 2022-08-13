@@ -6,7 +6,7 @@ import Skill from './Skill';
   
   return (
     
-    <div className='card p-3 bg-secondary bg-opacity-25 mx-3' >
+    <div className='card p-3 bg-secondary bg-opacity-25 mx-3 mb-3' >
   
       <div className='card-body' >
         <h1 className='card-title text-center'>About Me</h1>

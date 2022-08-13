@@ -81,7 +81,7 @@ function App() {
           <Route path='/' element={<Info skills={skills} />} />
           <Route path='/Education' element={<Education courses={courses} />} />
           <Route path='/Projects' element={<Projects projects={projects} />} />
-
+          
         </Routes>
       
       
@@ -89,8 +89,8 @@ function App() {
     </section>
     <div className="h-100">
     </div>
-    <footer className="p-3 m-3 bg-dark text-white text-center position-relative start-50 translate-middle bottom-fixed">
-      <div className="container">
+    <footer className="p-md-3 m-md-3 pr-sm-3 bg-dark text-white text-center">
+      <div className="container"> 
         <p className="lead">Copyright &copy; 2022 Guidong Luo</p>
 
         

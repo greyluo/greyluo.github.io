@@ -6,7 +6,7 @@ const Project = ({project}) => {
     "textDecoration":'underline dotted',
   };
   return (
-    <div className='card p-3 bg-secondary bg-opacity-25 mb-4 radius-'>
+    <div className='card p-3 bg-secondary bg-opacity-25 mt-4 radius-'>
       <div className='card-body'>
         <h4 className='card-title'>
         <a className=" text-light" style={linkStyle} href={project.link}>{project.name}</a></h4>
