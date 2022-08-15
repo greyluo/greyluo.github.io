@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import {Routes, Route} from 'react-router-dom'
 import SideButton from './components/SideButton';
 import data from './db.json'
+import Contacts from './components/Contacts';
 // Bootstrap CSS
 // Bootstrap Bundle JS
 
@@ -46,24 +47,6 @@ function App() {
 
     getSkills()
   },[])
-
-/*   const fetchSkills = async () => {
-    const res = await fetch('http://localhost:3000/skills')
-    const data = await res.json()
-    return data
-  }
-
-  const fetchProjects = async () => {
-    const res = await fetch('http://localhost:3000/projects')
-    const data = await res.json()
-    return data
-  }
-  const fetchCourses = async () => {
-    const res = await fetch('http://localhost:3000/courses')
-    const data = await res.json()
-    return data
-  } */
-
   return (
     <div>
       <nav className='navbar navbar-expand-md bg-dark navbar-dark py-3 '>
@@ -81,6 +64,8 @@ function App() {
           <Route path='/' element={<Info skills={skills} />} />
           <Route path='/Education' element={<Education courses={courses} />} />
           <Route path='/Projects' element={<Projects projects={projects} />} />
+          <Route path='/Contacts' element={<Contacts/>} />
+          <Route path='*' element={<h1>404 Not Found</h1>} />
           
         </Routes>
       

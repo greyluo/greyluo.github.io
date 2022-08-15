@@ -17,6 +17,9 @@ const Sidebar = ({open}) => {
         <li className='nav-item'>
           <Link to='/Projects' className='nav-link'>Projects</Link>
         </li>
+        <li className='nav-item'>
+          <Link to='/Contacts' className='nav-link'>Contacts</Link>
+        </li>
       </ul>
         
      

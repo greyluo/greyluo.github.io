@@ -33,22 +33,22 @@
   ],
   "projects":[
     {
-      "name":"Web Scraping and Data Analyzing",
-      "description":"Crawled data of online ratings for over 10,000 restaurants using Python tools; Filtered and analyzed data to investigate the impact of online ratings on restaurant salesWrote a research paper that presented statistically significant results",
-      "duration":"July 2017 - December 2017",
-      "link":"http://www.google.com"
+      "name":"Weather Web APP",
+      "description":"Implemented quick weather search from OpenWeather API; Displayed and switched weather data and information by JavaScript",
+      "duration":"July 2022",
+      "link":"https://weather-app-gluo.web.app/"
     },
     {
       "name":"Automobile Registration System",
-      "description":"Developed a web application that allows users to register their automobiles and view their registration information",
-      "duration":"July 2017 - December 2017",
-      "link":"http://www.google.com"
+      "description":"Constructed a back-end API that implements automobile registration via HashMap; Provided user-interactive interface and instructions that facilitates data access and modification",
+      "duration":"May 2022",
+      "link":""
     },
     {
-      "name":"Encrypting and Decrypting Texts",
-      "description":"Utilized C and ARM Assembly Language to encrypt and decrypt texts; Minimized memory usage through bit-level manipulation to enable fast processing for lengthy texts",
-      "duration":"July 2017 - December 2017",
-      "link":"http://www.google.com"
+      "name":"Restaurant Sales Analysis ",
+      "description":"Crawled data of online ratings for over 10,000 restaurants using Python tools; Filtered and analyzed data through multiple regression analysis of ratings and sale",
+      "duration":"October 2019 - May 2020",
+      "link":""
     }
 
   ],

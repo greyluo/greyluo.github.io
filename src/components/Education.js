@@ -5,7 +5,7 @@ import ucsd from "./ucsd.jpeg"
 const Education = ({courses}) => {
  
   return (
-    <div className='p-3' id='Education'>
+    <div className='p-3 mx-3' id='Education'>
         <h1 className='text-center p-3'>Education</h1>
         <div className="card bg-secondary bg-opacity-25">
         <img src={ucsd} className="card-img-top w-auto" alt="ucsd"></img>
