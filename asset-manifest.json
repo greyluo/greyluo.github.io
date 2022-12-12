@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/me/static/css/main.7cfac3d5.css",
+    "main.js": "/me/static/js/main.9d2deac7.js",
+    "static/js/787.ee95881d.chunk.js": "/me/static/js/787.ee95881d.chunk.js",
+    "static/media/ucsd.jpeg": "/me/static/media/ucsd.1da1b74db5e6b220fef7.jpeg",
+    "index.html": "/me/index.html",
+    "main.7cfac3d5.css.map": "/me/static/css/main.7cfac3d5.css.map",
+    "main.9d2deac7.js.map": "/me/static/js/main.9d2deac7.js.map",
+    "787.ee95881d.chunk.js.map": "/me/static/js/787.ee95881d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7cfac3d5.css",
+    "static/js/main.9d2deac7.js"
+  ]
+}
