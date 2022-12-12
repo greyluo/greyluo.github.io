@@ -9,11 +9,8 @@ jobs:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Innitialize 
         run: |
-            npm install react-scripts 
-            git config --global user.name "greyluo" 
-            git config --global user.email "luo80480@gmail.com"   
+            npm install react-scripts  
         shell: bash
-        
       - name: Build
         run: npm run deploy
        
