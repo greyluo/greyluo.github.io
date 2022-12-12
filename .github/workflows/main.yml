@@ -8,7 +8,8 @@ jobs:
       - name: Innitialize 
         run: |
             npm install react-scripts \
+            npm config set registry http://registry.npmjs.org\
             git config --global user.name "greyluo" \
-            git config --global user.email "g1luo@ucsd.edu" \
+            git config --global user.email "luo80480@gmail.com" \
       - name: Build
         run: npm run deploy
