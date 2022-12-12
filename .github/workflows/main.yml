@@ -7,9 +7,9 @@ jobs:
       - uses: actions/checkout@v2
       - name: Innitialize 
         run: |
-            npm install react-scripts \
-            npm config set registry http://registry.npmjs.org\
-            git config --global user.name "greyluo" \
-            git config --global user.email "luo80480@gmail.com" \
+            npm install react-scripts 
+            git config --global user.name "greyluo" 
+            git config --global user.email "luo80480@gmail.com" 
+        shell: bash
       - name: Build
         run: npm run deploy
