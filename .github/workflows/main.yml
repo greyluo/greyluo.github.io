@@ -6,6 +6,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Innitialize 
-        run: npm
+        run: npm install react-scripts 
       - name: Build
         run: npm run deploy
