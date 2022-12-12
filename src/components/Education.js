@@ -22,15 +22,8 @@ const Education = ({courses}) => {
             ))
           }
           </div>
+        </div>       
         </div>
-        
-            
-        </div>
-           
-        
-        
-
-
     </div>
   )
 }

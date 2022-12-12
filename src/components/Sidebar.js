@@ -2,8 +2,6 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import { Collapse } from 'react-bootstrap'
 
-import { Stack } from 'react-bootstrap'
-
 const Sidebar = ({open}) => {
     return (
       <Collapse in={open}  dimension="width">
@@ -18,7 +16,7 @@ const Sidebar = ({open}) => {
           <Link to='/Projects' className='nav-link'>Projects</Link>
         </li>
         <li className='nav-item'>
-          <Link to='/Contacts' className='nav-link'>Contacts</Link>
+          <Link to='/Contact' className='nav-link'>Contact</Link>
         </li>
       </ul>
         

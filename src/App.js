@@ -6,7 +6,7 @@ import Projects from './components/Projects';
 import {Routes, Route} from 'react-router-dom'
 import SideButton from './components/SideButton';
 import data from './db.json'
-import Contacts from './components/Contacts';
+import Contact from './components/Contact';
 // Bootstrap CSS
 // Bootstrap Bundle JS
 
@@ -64,7 +64,7 @@ function App() {
           <Route path='/' element={<Info skills={skills} />} />
           <Route path='/Education' element={<Education courses={courses} />} />
           <Route path='/Projects' element={<Projects projects={projects} />} />
-          <Route path='/Contacts' element={<Contacts/>} />
+          <Route path='/Contact' element={<Contact/>} />
           <Route path='*' element={<h1>404 Not Found</h1>} />
           
         </Routes>
