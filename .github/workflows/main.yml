@@ -1,0 +1,11 @@
+name: CI
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Innitialize 
+        run: npm install react-scripts 
+      - name: Build
+        run: npm run deploy
