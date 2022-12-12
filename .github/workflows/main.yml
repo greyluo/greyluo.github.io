@@ -6,6 +6,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Innitialize 
-        run: npm install react-scripts 
+        run: |
+            npm install react-scripts \
+            git config --global user.name "greyluo" \
+            git config --global user.email "luo80480@gmail.com" \
       - name: Build
         run: npm run deploy
