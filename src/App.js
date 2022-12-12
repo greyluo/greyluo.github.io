@@ -50,7 +50,7 @@ function App() {
     <div>
       <nav className='navbar navbar-expand-md bg-dark navbar-dark py-3 '>
         <div className='container'>
-          <a href="#" className="navbar-brand"></a>
+          <a href="#" className="navbar-brand">Nav Brand</a>
           <SideButton onClick ={() => setOpen(!open)} />
           <Sidebar open = {open}/>
 
