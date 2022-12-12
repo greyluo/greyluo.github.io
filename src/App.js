@@ -14,10 +14,9 @@ function App() {
 
   const [courses, setCourses] = useState([]);
   const [projects, setProjects] = useState([]);
-  const [showSidebar, setShowSidebar] = useState(false);
   const [open, setOpen] = useState(false);
   const [skills, setSkills] = useState([]);
-  
+
 
   useEffect(() => {
 
@@ -28,7 +27,7 @@ function App() {
 
     getCourses()
 
-   
+
   },[])
 
   useEffect(() => {
@@ -54,9 +53,9 @@ function App() {
           <a href="#" className="navbar-brand"></a>
           <SideButton onClick ={() => setOpen(!open)} />
           <Sidebar open = {open}/>
-          
+
         </div>
-    
+
       </nav>
     <section className='bg-dark text-light mx-3 mt-3 pb-5 mb-5'>
       <div className="container">
@@ -66,24 +65,24 @@ function App() {
           <Route path='/Projects' element={<Projects projects={projects} />} />
           <Route path='/Contact' element={<Contact/>} />
           <Route path='*' element={<h1>404 Not Found</h1>} />
-          
+
         </Routes>
-      
-      
+
+
       </div>
     </section>
     <div className="h-100">
     </div>
     <footer className="p-md-3 m-md-3 pr-sm-3 bg-dark text-white text-center">
-      <div className="container"> 
+      <div className="container">
         <p className="lead">Copyright &copy; 2022 Guidong Luo</p>
 
-        
+
       </div>
     </footer>
-   
+
     </div>
-    
+
   )
 
 }
