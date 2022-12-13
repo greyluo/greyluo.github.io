@@ -1,7 +1,3 @@
-
-Run details
-Workflow file for this run
-.github/workflows/main.yml at f55649d
 name: GitHub Pages
 
 on:
