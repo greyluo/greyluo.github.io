@@ -24,10 +24,7 @@ function App() {
       const CoursesFromServer = data.courses;
       setCourses(CoursesFromServer)
     }
-
     getCourses()
-
-
   },[])
 
   useEffect(() => {
@@ -35,7 +32,6 @@ function App() {
       const ProjectsFromServer = data.projects;
       setProjects(ProjectsFromServer)
     }
-
     getProjects()
   },[])
   useEffect(() => {
