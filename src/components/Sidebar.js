@@ -1,28 +1,35 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
-import { Collapse } from 'react-bootstrap'
 
-const Sidebar = ({open}) => {
+const Sidebar = ( ()=> {
     return (
-      <Collapse in={open}  dimension="width">
-      <ul className='navbar-nav ms-auto'>
-        <li className='nav-item'> 
-          <Link to='/' className='nav-link'>Home</Link>
-        </li>
-        <li className='nav-item'>
-          <Link to='/Education' className='nav-link'>Education</Link>
-        </li>
-        <li className='nav-item'>
-          <Link to='/Projects' className='nav-link'>Projects</Link>
-        </li>
-        <li className='nav-item'>
-          <Link to='/Contact' className='nav-link'>Contact</Link>
-        </li>
-      </ul>
-        
-     
-      
-      </Collapse>
+
+        <nav className='navbar navbar-expand-sm bg-dark navbar-dark p-3'>
+          <div className='container'>
+          <button className="navbar-toggler mx-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse mx-3" id="navbarSupportedContent">
+            <ul className='navbar-nav ms-auto'>
+              <li className='nav-item'>
+                <a className="nav-link" href="/">Home</a>
+              </li>
+              <li className='nav-item'>
+                <a className="nav-link" href="/Education">Education</a>
+              </li>
+              <li className='nav-item'>
+                <a className="nav-link" href="/Projects">Projects</a>
+
+              </li>
+              <li className='nav-item'>
+                <a className="nav-link" href="/Contacts">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          </div>
+        </nav>
+
+
       )
   }
+)
   export default Sidebar;

@@ -11,15 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-li {
-  list-style: none;
-  padding-top: 5px;
-}
-
-li {
-  list-style: none;
-  padding-top: 5px;
-}
 a {
   text-decoration: underline dotted;
+}
+a:hover {
+  text-decoration: underline;
+  color: white;
 }

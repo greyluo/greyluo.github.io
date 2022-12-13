@@ -16,6 +16,16 @@
       "name":"Advanced Data Structures"
     },
     {
+      "id":"142",
+      "subject":"cse",
+      "name":"Introduction to Computer Architecture: A Software Perspective"
+    },
+    {
+      "id":"142l",
+      "subject":"cse",
+      "name":"Software Project for Computer Architecture"
+    },
+    {
       "id":"30",
       "subject":"cse",
       "name":"Computer Organization and Systems Programming"
@@ -33,21 +43,37 @@
   ],
   "projects":[
     {
-      "name":"Weather Web APP",
-      "description":"Implemented quick weather search from OpenWeather API; Displayed and switched weather data and information by JavaScript",
+      "name":"Note Taking APP",
+      "description":"Served as team lead, organizing sprint meetings and coordinating tasks using Agile methodology; Developed main dashboard and note editor as a back-end developer; Built responsive and lightweight note-taking app with HTML, JavaScript, and CSS;Implemented IndexedDB for large local storage",
       "duration":"July 2022",
+      "language":"JavaScript,HTML,CSS",
+      "link":"https://cse110-fa22-group5.github.io/cse110-fa22-group5/source/index.html"
+    },
+    {
+      "name":"Huffman Compression & Decompression",
+      "description":"Developed Huffman compression and decompression algorithm in C++; Implemented Huffman tree and bitwise operations for efficient data compression; Achieved data size reduction of up to 80%",
+      "language":"C++,ARM Assembly",
+      "link":""
+    },
+    {
+      "name":"Weather Web APP",
+      "description":"Developed a weather web app that utilizes the OpenWeather API to allow users to quickly search for weather information; Implemented JavaScript to display and switch between different weather data and information, providing a user-friendly interface for accessing weather information; Improved user experience by implementing a clean and intuitive design for the app; Demonstrated proficiency in web development and API integration with this project",
+      "duration":"July 2022",
+      "language":"JavaScript, HTML, CSS",
       "link":"https://weather-app-gluo.web.app/"
     },
     {
       "name":"Automobile Registration System",
-      "description":"Constructed a back-end API that implements automobile registration via HashMap; Provided user-interactive interface and instructions that facilitates data access and modification",
+      "description":"Developed back-end API for automobile registration using C; Designed the HashMap data structure to support high-concurrency and low-latency operations; Implemented functions for efficient adding, deleting, searching, and updating of records",
       "duration":"May 2022",
+      "language":"C",
       "link":""
     },
     {
       "name":"Restaurant Sales Analysis ",
-      "description":"Crawled data of online ratings for over 10,000 restaurants using Python tools; Filtered and analyzed data through multiple regression analysis of ratings and sale",
+      "description":"Collected data of online ratings for over 10,000 restaurants using Python tools and libraries, such as requests and pandas; Filtered and analyzed the data through multiple regression analysis to identify the factors that impact restaurant ratings and sales; Utilized the findings to inform decision-making and improve the restaurants' performance",
       "duration":"October 2019 - May 2020",
+      "language":"Python",
       "link":""
     }
 
