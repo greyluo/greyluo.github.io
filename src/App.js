@@ -13,7 +13,6 @@ function App() {
 
   const [courses, setCourses] = useState([]);
   const [projects, setProjects] = useState([]);
-  const [open, setOpen] = useState(false);
   const [skills, setSkills] = useState([]);
 
   useEffect(() => {

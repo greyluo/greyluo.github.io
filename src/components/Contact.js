@@ -1,16 +1,10 @@
 import React from 'react'
-import { useState } from 'react';
+
 const Contact = () => {
-  const [isHover, setIsHover] = useState(false);
-  const handleMouseEnter = () => {
-    setIsHover(true);
- };
- const handleMouseLeave = () => {
-    setIsHover(false);
- };
+
   const linkStyle = {
-    "textDecoration": isHover?'none':'underline dotted',
-    "color": isHover?'#fff':'#fff',
+    "textDecoration":'underline dotted',
+    "color":"white",
 
     //when hover, change color
 
@@ -22,7 +16,7 @@ const Contact = () => {
           <div className='card-body'>
             <h1 className='card-title text-center'>Contact</h1>
             <p className='card-text py-3 text-center text-light'>
-              <a style={linkStyle} href='https://github.com/greyluo/'>GitHub</a>
+              <a style={linkStyle} href='https://github.com/greyluo/' >GitHub</a>
               &nbsp; &nbsp; &nbsp;
               <a style={linkStyle}href='mailto: g1luo@ucsd.edu'>g1luo@ucsd.edu</a>
             </p>
