@@ -21,7 +21,7 @@ const Sidebar = ( ()=> {
 
               </li>
               <li className='nav-item'>
-                <a className="nav-link" href="/Contacts">Contacts</a>
+                <a className="nav-link" href="/Contact">Contact</a>
               </li>
             </ul>
           </div>
