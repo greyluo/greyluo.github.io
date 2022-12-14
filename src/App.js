@@ -47,7 +47,7 @@ function App() {
             <Route path='/' element={<Info skills={skills} />} />
             <Route path='/Education' element={<Education courses={courses} />} />
             <Route path='/Projects' element={<Projects projects={projects} skills={skills}/>} />
-            <Route path='/Contacts' element={<Contact/>} />
+            <Route path='/Contact' element={<Contact/>} />
             <Route path='*' element={<h1>404 Not Found</h1>} />
 
           </Routes>
