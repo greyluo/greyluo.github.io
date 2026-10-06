@@ -17,14 +17,10 @@
       <a href="{{ '/' | relative_url }}">Writing</a>
       <a href="{{ '/about/' | relative_url }}">About</a>
       <a href="https://x.com/{{ site.x_handle }}">X</a>
-      <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
     </nav>
   </header>
   <main>
     {{ content }}
   </main>
-  <footer class="site-footer">
-    © {{ 'now' | date: '%Y' }} {{ site.author }}
-  </footer>
 </body>
 </html>
