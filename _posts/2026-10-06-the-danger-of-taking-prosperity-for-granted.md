@@ -1,5 +1,6 @@
 ---
 title: "The Danger of Taking Prosperity for Granted"
+subtitle: "Whatever we treat as a default, we slowly stop working to protect."
 date: 2026-10-06
 ---
 
