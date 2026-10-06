@@ -12,7 +12,7 @@ I'm Grey (Guidong) Luo, a founding engineer at Varick Agents in San Francisco, b
 
 This is where I write down what I'm thinking about: how AI is changing the way software gets built, and the bigger questions about the world it's being built into.
 
-You can find me on [X](https://x.com/greyluox), [GitHub](https://github.com/greyluo), and [LinkedIn](https://www.linkedin.com/in/guidongluo).
+Reach me at [greyluox@gmail.com](mailto:greyluox@gmail.com), or find me on [X](https://x.com/greyluox), [GitHub](https://github.com/greyluo), and [LinkedIn](https://www.linkedin.com/in/guidongluo).
 
 </div>
 </article>
