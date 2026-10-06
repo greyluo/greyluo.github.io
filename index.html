@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<section class="intro">
+  <h1>{{ site.title }}</h1>
+  <p>{{ site.description }}</p>
+</section>
+
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <a href="{{ post.url | relative_url }}">
+      <span class="post-title">{{ post.title }}</span>
+      {% if post.subtitle %}<span class="post-sub">{{ post.subtitle }}</span>{% endif %}
+    </a>
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+  </li>
+  {% endfor %}
+</ul>

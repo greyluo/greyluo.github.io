@@ -1,0 +1,25 @@
+title: Grey Luo
+author: Grey Luo
+description: Notes on building with AI, and on the world it's being built into.
+url: "https://greyluo.github.io"
+baseurl: ""
+x_handle: greyluox
+
+permalink: /:year/:month/:title/
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - README.md
+  - DEPLOY_PROMPT.md
+  - Gemfile
+  - Gemfile.lock
