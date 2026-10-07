@@ -28,14 +28,10 @@ async function show(url, { push, scrollY = 0 }) {
     return;
   }
   const next = new DOMParser().parseFromString(html, "text/html");
-  const swap = () => {
-    document.title = next.title;
-    document.querySelector("main").replaceWith(next.querySelector("main"));
-    if (push) history.pushState({ scrollY: 0 }, "", url);
-    window.scrollTo(0, scrollY);
-  };
-  if (document.startViewTransition) document.startViewTransition(swap);
-  else swap();
+  document.title = next.title;
+  document.querySelector("main").replaceWith(next.querySelector("main"));
+  if (push) history.pushState({ scrollY: 0 }, "", url);
+  window.scrollTo(0, scrollY);
 }
 
 document.addEventListener("mouseover", (event) => {
